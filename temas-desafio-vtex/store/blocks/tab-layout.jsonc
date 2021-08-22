@@ -1,0 +1,129 @@
+//Template para utilização do tab-layout na navegação entre categorias.
+
+{
+    "tab-layout#home": {
+        "children": [
+            "tab-list#home",
+            "tab-content#home"
+        ]
+    },
+    "tab-list#home":{
+        "children": [
+            "tab-list.item#promocao",
+            "tab-list.item#corin",
+            "tab-list.item#palm"
+        ],
+        "props":{
+            "blockClass": ["header"]
+        }
+    },
+    "tab-list.item#promocao":{
+        "props": {
+            "tabId": "promocao",
+            "label": "PROMOÇÃO",
+            "defaultActiveTab": true
+          }
+    },
+    "tab-list.item#corin":{
+        "props": {
+            "tabId": "corin",
+            "label": "CORINTHIANS"
+          }
+    },
+    "tab-list.item#palm":{
+        "props": {
+            "tabId": "palm",
+            "label": "PALMEIRAS"
+          }
+    },
+    "tab-content#home":{
+        "children": [
+              "tab-content.item#promocao",
+              "tab-content.item#corin",
+              "tab-content.item#palm"
+            ],
+            "props":{
+                "blockClass": ["header"]
+            }
+    },
+    "tab-content.item#promocao":{
+        "props": {
+              "tabId": "promocao"
+            },
+        "children":[
+            "flex-layout.row#spacer",
+            "slider-layout#destaque",
+            "search-result-layout.customQuery#promocao"
+        ]
+    },
+    "search-result-layout.customQuery#promocao": {
+        "props": {
+            "querySchema": {
+            "orderByField": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "24",
+            "mapField": "c,c"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-not-found-layout"
+        ]
+    },
+    "tab-content.item#corin":{
+        "props": {
+            "tabId": "corin"
+            },
+            "children":[
+                "flex-layout.row#spacer",
+                "slider-layout#destaque",
+                "search-result-layout.customQuery#corin"
+        ]
+    },
+    "search-result-layout.customQuery#corin": {
+        "props": {
+        "querySchema": {
+            "orderByField": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "Corinthians",
+            "mapField": "ft"
+            }
+        },
+        "blocks": [
+        "search-result-layout.desktop",
+        "search-not-found-layout"
+        ]
+    },
+    "tab-content.item#palm":{
+    "props": {
+        "tabId": "palm"
+        },
+        "children":[
+            "flex-layout.row#spacer",
+            "slider-layout#destaque",
+            "search-result-layout.customQuery#palm"
+        ]
+    },
+    "search-result-layout.customQuery#palm": {
+        "props": {
+        "querySchema": {
+            "orderByField": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "Palmeiras",
+            "mapField": "ft"
+        }
+        },
+        "blocks": [
+        "search-result-layout.desktop",
+        "search-not-found-layout"
+        ]
+    },
+    "flex-layout.row#spacer": {
+        "props":{
+            "blockClass": ["spacer"]
+        }
+    }
+}

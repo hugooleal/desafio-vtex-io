@@ -1,0 +1,18 @@
+.listContainer--header {
+    background-color: #212121;
+    z-index: 3;
+    position: fixed;
+    justify-content: left;
+}
+
+.listItemActive--header {
+    background-color: transparent;
+}
+
+.listItemChildrenActive--header {
+    background-color: transparent;
+}
+
+.listItem--header:hover {
+    background-color: blue;
+}

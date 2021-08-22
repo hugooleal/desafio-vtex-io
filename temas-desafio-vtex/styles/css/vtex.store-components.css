@@ -1,0 +1,15 @@
+.imageElement--destaque {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.imageElement--footer {
+    width: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.productBrand {
+    color: white;
+}
+

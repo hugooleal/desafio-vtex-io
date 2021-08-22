@@ -1,0 +1,28 @@
+{
+    "store.custom#desconto": {
+        "blocks": [
+            "flex-layout.row#desconto"
+        ]
+    },
+    "flex-layout.row#desconto": {
+        "children": [
+            "flex-layout.col#desconto"
+        ]
+    },
+    "flex-layout.col#desconto": {
+        "children": [
+            "rich-text#desc",
+            "lead-catcher"
+        ],
+        "props": {
+            "blockClass": ["desconto"]
+        }
+    },
+    "rich-text#desc": {
+        "props": {
+            "blockClass": ["desc"],
+            "text": "Quer ficar por dentro de todas as promoções e ainda ganhar 15% de desconto? \n Se inscreva abaixo!",
+            "textAlignment": "CENTER"
+        }
+    }
+}      

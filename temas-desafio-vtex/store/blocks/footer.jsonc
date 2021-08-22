@@ -1,0 +1,37 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-desktop"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-mobile"
+    ]
+  },
+  "flex-layout.row#footer-desktop": {
+    "children": [
+      "flex-layout.col#login",
+      "flex-layout.col#desafios",
+      "flex-layout.col#loja",
+      "flex-layout.col#suporte"
+    ],
+    "props":{
+      "blockClass": ["footer"]
+    }   
+  },
+  "flex-layout.row#footer-mobile": {
+    "children": [
+      "flex-layout.col#login",
+      "flex-layout.col#desafios",
+      "flex-layout.col#loja",
+      "flex-layout.col#suporte"
+    ],
+    "props":{
+      "blockClass": ["footer"]
+    }   
+  }
+}

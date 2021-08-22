@@ -1,0 +1,23 @@
+.paragraph--footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1rem;
+}
+
+.link--footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.link--desconto {
+    text-decoration: none;
+    color: white;
+}
+
+.paragraph--desc {
+    font-size: 1.5rem;
+}

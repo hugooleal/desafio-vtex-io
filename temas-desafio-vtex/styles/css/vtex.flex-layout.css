@@ -1,0 +1,71 @@
+.flexRow--footer {
+    z-index: 3;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 56px;
+    width: 100%;
+    color: white;
+    bottom: 0px;
+    position: fixed;
+    background-color: #424242;
+}
+
+.flexCol--footer {
+    max-width: 168px;
+    min-width: 80px;
+    padding: 6px 12px 2px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flexRow--header {
+    display: flex;
+    background-color: #212121;
+}
+
+.flexRow--homeresults {
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-bottom: 5rem;
+}
+
+@media only screen and (max-width: 929px) {
+    .flexRow--homeresults {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1284px) {
+    .flexRow--homeresults {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.flexRow--spacer {
+    height: 3.5rem;
+}
+
+@media only screen and (max-width: 499px) {
+    .flexRow--spacer {
+        height: 7rem;
+    }
+}
+
+.flexRow--shelf {
+    margin: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexCol--desconto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

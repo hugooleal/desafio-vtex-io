@@ -1,0 +1,98 @@
+//Segregação dos buttons utilizados no footer.
+
+{
+    "flex-layout.col#login": {
+        "props":{
+            "blockClass": ["footer"]
+        },
+        "children": [
+            "image#login",
+            "rich-text#login"
+        ]
+      },
+      "image#login": {
+        "props": {
+          "blockClass": "footer",
+          "src": "assets/images/login.png",
+          "link": "/login"
+        }
+      },
+      "rich-text#login": {
+        "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "[ENTRAR](/login)",
+          "blockClass": ["footer"]
+        }
+      },
+    "flex-layout.col#desafios": {
+        "props":{
+            "blockClass": ["footer"]
+        },
+        "children": [
+            "image#desafios",
+            "rich-text#desafios"
+          ]
+    },
+    "image#desafios": {
+      "props": {
+        "blockClass": "footer",
+        "src": "assets/images/trophy.png"
+      }
+    },
+    "rich-text#desafios": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "[DESAFIOS](/)",
+        "blockClass": ["footer"]
+      }
+    },
+    "flex-layout.col#loja": {
+        "props":{
+            "blockClass": ["footer"]
+        },
+        "children": [
+            "image#loja",
+            "rich-text#loja"
+          ]
+    },
+    "image#loja": {
+      "props": {
+        "blockClass": "footer",
+        "src": "assets/images/cart.png"
+      }
+    },
+    "rich-text#loja": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "[LOJA](/)",
+        "blockClass": ["footer"]
+      }
+    },
+    "flex-layout.col#suporte": {
+        "props":{
+            "blockClass": ["footer"]
+        },
+        "children": [
+            "image#suporte",
+            "rich-text#suporte"
+          ]
+    },
+    "image#suporte": {
+      "props": {
+        "blockClass": "footer",
+        "src": "assets/images/wpp.png",
+        "link": "https://api.whatsapp.com/send?phone=5511964335064&text=Para%20falar%20com%20a%20Gabi%F0%9F%91%B1%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%20%20Clique%20enviar%F0%9F%91%89%20%20------------%20*D%C3%BAvida%20sobre%3A*%20%20*ID%3A*%2052292"
+      }
+    },
+    "rich-text#suporte": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "[SUPORTE](https://api.whatsapp.com/send?phone=5511964335064&text=Para%20falar%20com%20a%20Gabi%F0%9F%91%B1%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%20%20Clique%20enviar%F0%9F%91%89%20%20------------%20*D%C3%BAvida%20sobre%3A*%20%20*ID%3A*%2052292)",
+        "blockClass": ["footer"]
+      }
+    }
+}

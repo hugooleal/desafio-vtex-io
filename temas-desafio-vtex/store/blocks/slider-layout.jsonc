@@ -1,0 +1,24 @@
+{   
+  "slider-layout#destaque": {
+    "children": ["image#destaque1", "image#destaque2"],
+    "props": {
+      "blockClass": "destaque",
+      "fullWidth": "false",
+      "itemsPerPage": "1"
+    }
+  },
+  "image#destaque1": {
+    "props": {
+      "blockClass": "destaque",
+      "src": "assets/images/destaque1.png",
+      "maxWidth": "912px"
+    } 
+  },
+  "image#destaque2": {
+      "props": {
+        "blockClass": "destaque",
+        "src": "assets/images/destaque2.png",
+        "maxWidth": "912px"
+      }
+    }
+}

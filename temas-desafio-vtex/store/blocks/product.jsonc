@@ -1,0 +1,40 @@
+// store/blocks/product.jsonc
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#main"
+    ]
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "flex-layout.col#left"
+    ]
+  },
+  "flex-layout.col#left": {
+    "children": [
+      "product-images#summary",
+      "flex-layout.col#bottom"
+    ]
+  },
+  "flex-layout.col#bottom": {
+    "children": [
+      "product-name",
+      "product-price",
+      "buy-button"
+    ]
+  },
+  "product-price": {
+    "props": {
+      "showSavings": true,
+      "showListPrice": true
+    }
+  },
+  "product-images#summary": {
+    "props": {
+      "displayThumbnailsArrows": false
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.sellingPrice {
+    align-items: center;
+    justify-content: center;
+}
+
+.sellingPriceValue {
+    color: #59ff00;
+    font-size: 1.5rem;
+}

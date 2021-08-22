@@ -1,0 +1,46 @@
+{
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#homeresults"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#homeresults": { 
+    "children": [
+      "flex-layout.col#homesearch"
+    ],
+    "props":{
+      "blockClass": ["homeresults"]
+    }
+  },
+  "flex-layout.col#homesearch": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": { 
+    "blocks": ["gallery", "not-found"]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "home",
+          "component": "Home",
+          "itemsPerRow": {
+            "desktop": 2,
+            "tablet": 1,
+            "phone": 1
+          }
+        }
+      ],
+      "Home": "product-summary.shelf#home"
+    }
+  }
+}

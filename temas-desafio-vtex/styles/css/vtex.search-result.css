@@ -1,0 +1,10 @@
+.gallery--home {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.galleryItem--home {
+    display: flex;
+    justify-content: center;
+}

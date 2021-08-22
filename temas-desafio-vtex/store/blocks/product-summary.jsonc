@@ -1,0 +1,24 @@
+{
+    "product-summary.shelf#home": {
+        "children": [
+            "product-summary-name",
+            "product-summary-image",
+            "flex-layout.row#shelf"
+        ]
+    },
+    "flex-layout.row#shelf": {
+        "children": [
+            "product-selling-price",
+            "add-to-cart-button#shelf"
+        ],
+        "props": {
+            "blockClass": ["shelf"]
+        }
+    },
+    "add-to-cart-button#shelf": {
+        "props": {
+            "onClickBehavior": "go-to-product-page",
+            "text": "VER DETALHES"
+        }
+    }
+}
