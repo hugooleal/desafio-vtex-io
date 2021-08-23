@@ -22,7 +22,7 @@ const LeadCatcher: StorefrontFunctionComponent<LeadCatcherProps> = ({}) => {
 
     const requestOptions = {
       method: 'PUT',
-      headers: { 'mode': 'no-cors', 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json' },
       body: lead
     };
 
